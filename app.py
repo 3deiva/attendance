@@ -2,7 +2,6 @@
 from flask import Flask, request, jsonify
 from models import init_db, add_user, get_user_by_username
 from face_utils import encode_face, compare_faces
-from attendance import mark_attendance
 
 app = Flask(__name__)
 init_db()
