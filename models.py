@@ -14,11 +14,7 @@ def init_db():
         encoding BLOB
     )
     ''')
-CREATE TABLE IF NOT EXISTS users (
-        username TEXT PRIMARY KEY,
-        encoding BLOB
-    )
-    ''')
+
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS attendance (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
